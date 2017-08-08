@@ -1,0 +1,6 @@
+.htaccess
+app/etc/local.xml
+media/
+var/
+*.swp
+log/*.log
