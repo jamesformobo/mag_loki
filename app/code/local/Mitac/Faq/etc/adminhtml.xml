@@ -1,0 +1,44 @@
+<adminhtml>
+	<menu>
+		<mitacadminfaq module="mitacfaq">
+			<title>FAQ</title>
+			<sort_order>75</sort_order>
+			<action>mitacadminfaq/adminhtml_faqs</action>
+				<children>
+					<mitacfaq_list>
+						<title>Manage Faq</title>
+						<sort_order>10</sort_order>
+						<action>mitacadminfaq/adminhtml_faqs</action>
+					</mitacfaq_list>
+					<mitacfaq_category>
+						<title>Manage Faq Category</title>
+						<sort_order>20</sort_order>
+						<action>mitacadminfaq/adminhtml_category</action>
+					</mitacfaq_category>
+				</children>
+		</mitacadminfaq>
+	</menu>
+
+	<acl>
+		<resources>
+				<admin>
+				<children>
+					<mitacadminfaq translate="title" module="mitacfaq">
+						<title>FAQ</title>
+						<sort_order>75</sort_order>
+						<children>
+							<mitacfaq_list>
+								<title>Manage Faq</title>
+								<sort_order>10</sort_order>
+							</mitacfaq_list>
+							<mitacfaq_category>
+								<title>Manage Faq Category</title>
+								<sort_order>20</sort_order>
+							</mitacfaq_category>
+						</children>												
+					</mitacadminfaq>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</adminhtml>
