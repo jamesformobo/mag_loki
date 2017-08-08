@@ -35,7 +35,7 @@ Whoops, it looks like you have an invalid PHP version.</h3></div><p>Magento supp
 }
 
 /**
- * Compilation includes configuration file
+ * Compilation includes configuration file TEST TEST
  */
 define('MAGENTO_ROOT', getcwd());
 
